@@ -3,21 +3,13 @@
   
   'use strict';
 
-  
-  $(window).scroll(function () {
-
-    //if you hard code, then use console
-    //.log to determine when you want the 
-    //nav bar to stick.  
-
-    if ($(window).scrollTop() > 280) {
-      $('.navbar-static-top').addClass('navbar-fixed');
-    }
-    if ($(window).scrollTop() < 281) {
-      $('.navbar-static-top').removeClass('navbar-fixed');
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('nav').addClass('shrink');
+    } else {
+      $('nav').removeClass('shrink');
     }
   });
-
 
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $('a.page-scroll').bind('click', function (event) {
@@ -33,22 +25,14 @@
 
   // Highlight the top nav as scrolling occurs
   $('body').scrollspy({
-    target: '.navbar-static-top',
+    target: '.navbar-fixed-top',
     offset: 51
   });
 
   // Closes the Responsive Menu on Menu Item Click
   $('.navbar-collapse ul li a').click(function(){ 
-          $('.navbar-toggle:visible').click();
+      $('.navbar-toggle:visible').click();
   });
-
-  // Fit Text Plugin for Main Header
-  $("h1").fitText(
-      1.2, {
-          minFontSize: '35px',
-          maxFontSize: '65px'
-      }
-  );
 
   // Offset for Main Navigation
   $('#mainNav').affix({

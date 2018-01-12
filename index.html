@@ -28,9 +28,9 @@
     <![endif]-->
 
   </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <body id="page-top" class="index">
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand page-scroll" href="#page-top">
-            <img src="./img/logo.png">
+            <img src="./img/logo.png" class="img-responsive" >
           </a>
         </div>
 
@@ -49,14 +49,76 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
+    <header>
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row intro-text">
+          <div class="intro-lead-in">Welcome To Our Studio!</div>
+          <div class="intro-heading">We Consult & Monitor</div>
+        </div>
+      </div>
+    </header>
+    
+    <aside class="aside">
+      <div class="container">
+        <h1 class="text-center"> Data without insights is useless</h1>
+      </div>
+    </aside>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Services</h2>
+            <h3 class="section-subheading text-muted">Our Solutions</h3>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-3">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle  fa-stack-2x text-primary"></i>
+                <i class="fa ffa fa-area-chart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Ed-Analytics</h4>
+            <p class="text-muted">We offer unequaled editorial monitoring solutions for the Public Relations purpose.</p>
+          </div>
+          <div class="col-md-3">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa fa-file-image-o fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">MediaRun</h4>
+            <p class="text-muted">MediaRun™ has been developed to monitor broadcast advertisements to offer our client Proof-of-Flight, Share of Voice (SOV).</p>
+          </div>
+          <div class="col-md-3">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa fa-file-text fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Med-Plan</h4>
+            <p class="text-muted">Med-Plan™ is targeted at organizations that do not use media planning agencies when conceiving and executing their media campaigns.</p>
+          </div>
+          <div class="col-md-3">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Online Tracker</h4>
+            <p class="text-muted">We give you real time access to online activities as they happen, measure the impact of campaigns.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- jQuery -->
     <script src="vendor/jquery.js"></script>
