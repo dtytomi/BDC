@@ -30,39 +30,37 @@
   </head>
   <body id="page-top" class="index">
 
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-light navbar-expand-lg bg-light sticky-top" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        
           <a class="navbar-brand page-scroll" href="#page-top">
-            <img src="./img/logo.png" class="img-responsive" >
+            <img src="./img/logo.png" class="img-fluid" >
           </a>
-        </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#special">Extra Values</a></li>
+            <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
-    <header>
+    <header class="masthead text-white text-center">
       <div class="overlay"></div>
       <div class="container">
-        <div class="row intro-text">
-          <div class="intro-lead-in">Welcome To Our Studio!</div>
-          <div class="intro-heading">We Consult & Monitor</div>
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">Providing meaningful solutions and actionable results</h1>
+          </div>
         </div>
       </div>
     </header>
@@ -73,7 +71,7 @@
       </div>
     </aside>
 
-    <section id="services">
+    <section id="services" class="service">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -120,6 +118,135 @@
       </div>
     </section>
 
+    <section id="special" class="bg-light-gray service">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Specialties</h2>
+            <h3 class="section-subheading text-muted">What Separates Us From the Rest</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-external-link fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/esme.png" class="img-fluid" alt="">
+            </a>
+            <div class="portfolio-caption esme">
+              <h4>ESSmetric</h4>
+              <p class="text-muted" style="color: #f1e2c7;">Live the brand promise</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-external-link fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/qualse.png" class="img-fluid" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>SQualSense</h4>
+              <p class="text-muted">Explore and understand the attitudes</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-external-link fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/monitor.png" class="img-fluid" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Monitoring Solutions</h4>
+              <p class="text-muted">We monitor every channel</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="aboutus" class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/vision.png');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Our Vission</h2>
+            <p class="lead mb-0">We strive to be the leading media monitoring and strategy consultancy firm that our  clients can fully rely on in managing their brands. We build lasting partnerships through:</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/mission.png');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Our Mission</h2>
+            <p class="lead mb-0">We are a consultancy firm dedicated to ensuring our clients get maximum returns on their investment through the use of insightful research and media management; and analytical tools</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/values.png'); max-width: 48.8%;"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Our Values</h2>
+            <p class="lead mb-0">We strive to be the leading media monitoring and strategy consultancy firm that our  clients can fully rely on in managing their brands. We build lasting partnerships through:
+            </p>
+            <p>
+              <ul>
+                <li>Learning and understanding your brand management goals, and objectives</li>
+                <li>Purus sodales ultricies</li>
+                <li>Collaborating with you to achieve your brand management objectives</li>
+                <li>Being a trusted partner that you can count on</li>
+                <li>Applying proven brand management techniques to business issues</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light-gray service">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Our Partner</h2>
+            <h3 class="section-subheading text-muted">Technology Partner</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 text-white">
+            <img src="./img/partner.png" class="img-fluid">
+          </div>
+          <div class="col-lg-6 my-auto showcase-text">
+             <p class="lead mb-0 text-justify">
+              Lexeme was incorporated in the year 2011 as a Kenyan company offering technology solutions largely within the Media industry
+            </p>
+            <p class="lead mb-0 text-justify">
+              Lexeme has successfully executed more than 30 projects within and outside Kenya and therefore has lots of experience on how to innovate, implement and support solutions as a partner.
+            </p>
+            <p class="lead mb-0 text-justify">
+              Lexeme has a team of dedicated staff members drawn from different technological fields, who work together both virtual teams across the world and local team in Kenya
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="contact">
+      
+    </section>
+
     <!-- jQuery -->
     <script src="vendor/jquery.js"></script>
 
@@ -133,7 +260,7 @@
 
     <script type="text/javascript" src="vendor/holder.js"></script>
 
-    <script src="js/hn.js"></script>
+    <script src="js/bdc.js"></script>
 
   </body>
 </html>
