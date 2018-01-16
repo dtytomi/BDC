@@ -110,7 +110,7 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #fff;
 }
 
 ul.CTAs {
@@ -406,7 +406,7 @@ section ul.section-subheading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #fed136;
+  background-color: #d258a1;
   color: white;
   border-radius: 100%;
   border: 7px solid #f1f1f1;
