@@ -44,8 +44,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-  min-width: 250px;
-  max-width: 250px;
+  width: 250px;
   position: fixed;
   top: 0;
   left: 0;
@@ -66,7 +65,6 @@ a, a:hover, a:focus {
 
 #sidebar ul.components {
   padding: 20px 0;
-  /*border-bottom: 1px solid #47748b;*/
 }
 
 #sidebar ul p {
@@ -126,21 +124,12 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
-
-a.article, a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
 #content {
-  width: calc(100% - 250px);;
+  width: calc(100% - 250px);
   min-height: 100vh;
   transition: all 0.3s;
   position: absolute;
@@ -163,14 +152,9 @@ a.article, a.article:hover {
   #sidebar.active {
       margin-left: 0;
   }
-  #sidebarCollapse span {
-      display: none;
-  }
-
   #content {
     width: 100%;
-  }
-
+  } 
   #content.active {
     width: calc(100% - 250px);
   }
@@ -344,7 +328,7 @@ section ul.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 
@@ -521,4 +505,67 @@ section ul.section-subheading {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
+}
+
+/* ---------------------------------------------------
+    SERVICE STYLE
+----------------------------------------------------- */
+
+.services {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.services .service-item {
+
+  max-width: 18rem; 
+}
+
+.services .service-item img {
+
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd; 
+}
+
+.services .service-header {
+  text-align: center;
+  font-size: 18px;
+  color: #404040;
+}
+
+.services .service-paragraph {
+  text-align: justify;
+  font-size: 14px;
+  color: #808080;
+}
+
+
+.feature {
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+  background-image: url(../img/consult.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.feature .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.feature-header {
+  margin: 70px auto;
+  font-size: 30px;
+  color: #fff;
+  font-weight: normal;
 }
